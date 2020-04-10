@@ -8,7 +8,7 @@
 //4. 
 function each(array, callback) {
 	for(var i = 0; i < array.length; i++) {
-		callback(array[i]);
+		callback(array[i], i);
 	}
 }
 
@@ -21,4 +21,19 @@ var image = document.getElementsByTagName("img");
 
 function modifyHeight(element) {
 	element.style.height = "300px";
+}
+
+var lists = document.getElementsByTagName('li');
+
+function modifyListContent(element, i) {
+var cities = ['San Francisco', 'Cairo', 'Tokyo', 'Nairobi'];
+if(i < cities.length)
+	element.textContent = cities[i];
+else
+	element.remove();
+}
+
+function changeImageElement() {
+var newElement = document.createElement('button');
+	image[0].parentNode.replaceChild(newElement, image[0]);
 }
