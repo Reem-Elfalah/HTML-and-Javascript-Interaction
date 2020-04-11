@@ -78,9 +78,9 @@ $('#secret').hide();
 // $(body).css(background-color, 'green')
 // This wont work! Why? Select all that apply.
 // Answer Choices:
-// body is not in a string
+// body is not in a string ==> correct
 // It WILL run.
-// the background-color is not in a string
+// the background-color is not in a string ==> correct
 // 8-
 
 // <!DOCTYPE html>
@@ -104,7 +104,7 @@ $('#secret').hide();
 // </body>
 // </html>
 // I want to change the background color of the body to red using jQuery. How would I do this?
-
+$('#web8').css("background-color", "red");
 // 9-
 
 // <!DOCTYPE html>
@@ -133,4 +133,6 @@ $('#secret').hide();
 // </body>
 // </html>
 // I want to append a new list item of thing four. How would I do that?
+
+$("#everything9 ol").append("<li>Here is thing four.</li>")
 //
